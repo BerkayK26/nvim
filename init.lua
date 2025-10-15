@@ -4,6 +4,19 @@ require("night.lazy")
 vim.api.nvim_set_option("clipboard", "unnamedplus")
 vim.cmd("colorscheme kanagawa")
 
+-- Default indentation (4 spaces)
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
+-- Set specific indentation for SystemVerilog and Verilog files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "verilog", "systemverilog" },
+  callback = function()
+    vim.opt_local.tabstop = 3
+    vim.opt_local.shiftwidth = 3
+  end,
+})
+
 
 -- everforest
 -- tokyonight-night tokyonight-storm tokyonight-day tokyonight-moon
