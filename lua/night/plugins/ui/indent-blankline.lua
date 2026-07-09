@@ -36,7 +36,8 @@ return {
             repeat_linebreak = true,
          },
          whitespace = {
-            remove_blankline_trail = true,
+            highlight = highlight,
+            remove_blankline_trail = false,
          },
          scope = {
             enabled = false,

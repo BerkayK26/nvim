@@ -51,6 +51,8 @@ opt.laststatus = 3
 opt.title = true
 opt.titlestring = vim.fn.fnamemodify(vim.fn.getcwd(), ":t") .. " |  "
 
+opt.fillchars = { eob = " " }
+
 -- Visualize whitespace
 -- opt.list = true
 -- opt.listchars:append("space:·")

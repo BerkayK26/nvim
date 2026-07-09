@@ -2,7 +2,8 @@ require("night.core")
 require("night.lazy")
 
 vim.api.nvim_set_option("clipboard", "unnamedplus")
-vim.cmd("colorscheme kanagawa")
+-- vim.cmd("colorscheme tokyonight-storm")
+vim.cmd("colorscheme yorumi")
 
 -- Default indentation (4 spaces)
 vim.opt.tabstop = 4

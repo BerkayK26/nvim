@@ -19,7 +19,8 @@ require("lazy").setup({
    { import = "night.plugins.verilog" },
 }, {
       install = {
-         colorscheme = { "tokyonight-storm" },
+         -- colorscheme = { "tokyonight-storm" },
+         colorscheme = { "yorumi" },
       },
       checker = {
          enabled = true,
